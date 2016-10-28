@@ -1,0 +1,29 @@
+{
+  "name": "rut.js",
+  "version": "0.0.1",
+  "description": "Sencilla y pequeña libreria para validar y dar formato al RUT",
+  "license": "MIT",
+  "repository": "jlobos/rut.js",
+  "author": "Jesús Lobos <jlobitu@gmail.com>",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard && ava"
+  },
+  "engines": {
+    "node": ">=6"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "validar",
+    "rut",
+    "chile",
+    "node",
+    "browser"
+  ],
+  "devDependencies": {
+    "ava": "^0.16.0",
+    "standard": "^8.5.0"
+  }
+}
