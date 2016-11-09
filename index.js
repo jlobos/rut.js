@@ -6,7 +6,7 @@ const clean = rut => {
 
 const validate = rut => {
   if (!rut || typeof rut !== 'string') { return false }
-  if (!/^(\d{1,3}(\.?\d{3}){2})\-?([\dkK])$/.test(rut)) {
+  if (!/^0*(\d{1,3}(\.?\d{3})*)\-?([\dkK])$/.test(rut)) {
     return false
   }
 
