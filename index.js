@@ -1,3 +1,4 @@
+'use strict'
 const clean = rut => {
   return (rut || typeof rut === 'string')
   ? rut.toString().replace(/[^0-9kK]+/g, '').toUpperCase()
