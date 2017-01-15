@@ -1,12 +1,13 @@
 'use strict'
-const clean = rut => {
-  return (rut || typeof rut === 'string')
-  ? rut.toString().replace(/[^0-9kK]+/g, '').toUpperCase()
+
+function clean (rut) {
+  return typeof rut === 'string'
+  ? rut.replace(/[^0-9kK]+/g, '').toUpperCase()
   : ''
 }
 
-const validate = rut => {
-  if (!rut || typeof rut !== 'string') { return false }
+function validate (rut) {
+  if (typeof rut !== 'string') { return false }
   if (!/^0*(\d{1,3}(\.?\d{3})*)-?([\dkK])$/.test(rut)) {
     return false
   }
@@ -22,14 +23,14 @@ const validate = rut => {
     t = Math.floor(t / 10)
   }
 
-  const v = (s > 0) ? (s - 1) + '' : 'K'
+  const v = (s > 0) ? `${s - 1}` : 'K'
   return (v === rut.slice(-1))
 }
 
-const format = rut => {
+function format (rut) {
   rut = clean(rut)
 
-  let result = rut.slice(-4, -1) + '-' + rut.substr(rut.length - 1)
+  let result = `${rut.slice(-4, -1)}-${rut.substr(rut.length - 1)}`
   for (let i = 4; i < rut.length; i += 3) {
     result = rut.slice(-3 - i, -i) + '.' + result
   }
