@@ -6,7 +6,7 @@
 [![bitHound Dependencies](https://www.bithound.io/github/jlobos/rut.js/badges/dependencies.svg)](https://www.bithound.io/github/jlobos/rut.js/master/dependencies/npm)
 [![bitHound Dev Dependencies](https://www.bithound.io/github/jlobos/rut.js/badges/devDependencies.svg)](https://www.bithound.io/github/jlobos/rut.js/master/dependencies/npm)
 
-Sencilla y pequeña libreria para validar y dar formato al RUT. Funciona en Node.js y Navegadores (Webpack, Browserify) 
+Sencilla y pequeña libreria para validar y dar formato al RUT. Funciona en Node.js y Navegadores (Webpack, Browserify)
 
 ```js
 const { validate, clean, format } = require('rut.js')
@@ -28,6 +28,8 @@ validate('error18.972.631-7')
 validate('9068826-1')
 validate('')
 validate(189726317)
+validate('0')
+validate(0)
 
 /**
  * Limpiar un RUT
@@ -50,15 +52,15 @@ format('9068826-k')     // '9.068.826-K'
 
 ## Instalación
 
-```
-npm i rut.js
+```bash
+$ npm install rut.js
 ```
 
 ## Testing
 
-```
-npm i
-npm test
+```bash
+$ npm install
+$ npm test
 ```
 
 > Librería basada en el código de [platanus/angular-rut](https://github.com/platanus/angular-rut)

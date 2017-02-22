@@ -24,6 +24,8 @@ test('validate', t => {
   t.false(validate('9068826-1'))
   t.false(validate(''))
   t.false(validate(189726317))
+  t.false(validate('0'))
+  t.false(validate(0))
 })
 
 test('format', t => {
