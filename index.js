@@ -19,7 +19,7 @@ function validate (rut) {
   let s = 1
 
   while (t > 0) {
-    s = (s + t % 10 * (9 - m++ % 6)) % 11
+    s = (s + ((t % 10) * (9 - (m++ % 6)))) % 11
     t = Math.floor(t / 10)
   }
 
