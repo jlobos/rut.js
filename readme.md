@@ -53,14 +53,14 @@ format('9068826-k')     // '9.068.826-K'
 ## Instalación
 
 ```bash
-$ npm install rut.js
+npm install --save rut.js
 ```
 
 ## Testing
 
 ```bash
-$ npm install
-$ npm test
+npm install
+npm test
 ```
 
 > Librería basada en el código de [platanus/angular-rut](https://github.com/platanus/angular-rut)
