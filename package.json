@@ -4,7 +4,7 @@
   "description": "Sencilla y pequeña libreria para validar y dar formato al RUT",
   "license": "MIT",
   "repository": "jlobos/rut.js",
-  "author": "Jesús Lobos <jlobitu@gmail.com>",
+  "author": "Jesus Lobos <jlobitu@gmail.com> (https://jlobos.com/)",
   "main": "index.js",
   "scripts": {
     "test": "standard && ava"
