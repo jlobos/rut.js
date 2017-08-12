@@ -1,6 +1,6 @@
 {
   "name": "rut.js",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "Sencilla y pequeña libreria para validar y dar formato al RUT",
   "license": "MIT",
   "repository": "jlobos/rut.js",
