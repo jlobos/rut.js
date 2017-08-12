@@ -1,11 +1,7 @@
 # rut.js 🇨🇱
 
 [![Build Status](https://travis-ci.org/jlobos/rut.js.svg?branch=master)](https://travis-ci.org/jlobos/rut.js)
-[![Build status](https://ci.appveyor.com/api/projects/status/q8ybcb57kl31thg7?svg=true)](https://ci.appveyor.com/project/jlobos/rut-js)
 [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
-[![bitHound Code](https://www.bithound.io/github/jlobos/rut.js/badges/code.svg)](https://www.bithound.io/github/jlobos/rut.js)
-[![bitHound Dependencies](https://www.bithound.io/github/jlobos/rut.js/badges/dependencies.svg)](https://www.bithound.io/github/jlobos/rut.js/master/dependencies/npm)
-[![bitHound Dev Dependencies](https://www.bithound.io/github/jlobos/rut.js/badges/devDependencies.svg)](https://www.bithound.io/github/jlobos/rut.js/master/dependencies/npm)
 
 Sencilla y pequeña libreria para validar y dar formato al RUT. Funciona en Node.js y Navegadores (Webpack, Browserify)
 
