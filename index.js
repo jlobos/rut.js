@@ -2,12 +2,14 @@
 
 function clean (rut) {
   return typeof rut === 'string'
-  ? rut.replace(/[^0-9kK]+/g, '').toUpperCase()
-  : ''
+    ? rut.replace(/[^0-9kK]+/g, '').toUpperCase()
+    : ''
 }
 
 function validate (rut) {
-  if (typeof rut !== 'string') { return false }
+  if (typeof rut !== 'string') {
+    return false
+  }
   if (!/^0*(\d{1,3}(\.?\d{3})*)-?([\dkK])$/.test(rut)) {
     return false
   }
@@ -19,12 +21,12 @@ function validate (rut) {
   let s = 1
 
   while (t > 0) {
-    s = (s + ((t % 10) * (9 - (m++ % 6)))) % 11
+    s = (s + t % 10 * (9 - m++ % 6)) % 11
     t = Math.floor(t / 10)
   }
 
-  const v = (s > 0) ? `${s - 1}` : 'K'
-  return (v === rut.slice(-1))
+  const v = s > 0 ? `${s - 1}` : 'K'
+  return v === rut.slice(-1)
 }
 
 function format (rut) {
