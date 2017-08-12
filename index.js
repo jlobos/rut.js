@@ -2,7 +2,7 @@
 
 function clean (rut) {
   return typeof rut === 'string'
-    ? rut.replace(/[^0-9kK]+/g, '').toUpperCase()
+    ? rut.replace(/^0+|[^0-9kK]+/g, '').toUpperCase()
     : ''
 }
 
