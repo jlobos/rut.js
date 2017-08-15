@@ -36,6 +36,7 @@ clean('189726317')      // '189726317'
 clean('18.972.631-7')   // '189726317'
 clean('12.345.678-k')   // '12345678K'
 clean('12*345*678*k')   // '12345678K'
+clean('000189726317')   // '189726317'
 
 /**
  * Dar formato a un RUT
@@ -60,4 +61,6 @@ npm install
 npm test
 ```
 
-> Librería basada en el código de [platanus/angular-rut](https://github.com/platanus/angular-rut)
+## License
+
+MIT © [Jesus Lobos](https://jlobos.com/)
