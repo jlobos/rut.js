@@ -5,6 +5,8 @@
 
 Sencilla y pequeña libreria para validar y dar formato al RUT. Funciona en Node.js y Navegadores (Webpack, Browserify)
 
+> Utilizada en producción para manejar mas de 13 millones de chilenos en [Rutify – Rutificador](https://rutify.cl/) 
+
 ```js
 const { validate, clean, format } = require('rut.js')
 
