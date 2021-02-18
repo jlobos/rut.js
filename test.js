@@ -37,6 +37,12 @@ test('format', (t) => {
   t.is(format('9068826-k'), '9.068.826-K')
 })
 
+test('does not validate rut with 0 on most right digit', t => {
+  t.false(validate('00.000.000-0'))
+  t.false(validate('00000000-0'))
+  t.false(validate('0000000000000000000000-0'))
+})
+
 test('getCheckDigit', (t) => {
   t.is(getCheckDigit('18.657.499-'), '0')
   t.is(getCheckDigit('6.383.287'), '1')
