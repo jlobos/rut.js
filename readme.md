@@ -1,11 +1,11 @@
 # rut.js 🇨🇱
 
-Sencilla y pequeña libreria para validar y dar formato al RUT. Funciona en Node.js y Navegadores (Webpack, Browserify)
+Sencilla y pequeña libreria para validar y dar formato al RUT. Funciona en Node.js y Navegadores (Webpack, Browserify, etc.)
 
-> Utilizada en producción para manejar mas de 13 millones de chilenos en [Rutify – Rutificador](https://rutify.cl/) 
+> Utilizada en producción para manejar mas de 13 millones de chilenos en [~Rutify – Rutificador~](https://rutify.cl/)
 
 ```js
-const { validate, clean, format } = require('rut.js')
+const { validate, clean, format, getCheckDigit } = require('rut.js')
 
 // true
 validate('18.972.631-7')
@@ -45,6 +45,12 @@ format('18.972.631-7')  // '18.972.631-7'
 format('189726317')     // '18.972.631-7'
 format('18*972*631*7')  // '18.972.631-7'
 format('9068826-k')     // '9.068.826-K'
+
+/**
+ * Obtener el dígito verificador
+ */
+getCheckDigit('18.972.631')  // '7'
+getcheckDigit('9068826')     // 'K'
 ```
 
 ## Instalación
@@ -59,7 +65,3 @@ npm install --save rut.js
 npm install
 npm test
 ```
-
-## License
-
-MIT © [Jesus Lobos](https://jlobos.com/)
