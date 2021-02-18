@@ -1,8 +1,5 @@
 # rut.js 🇨🇱
 
-[![Build Status](https://travis-ci.org/jlobos/rut.js.svg?branch=master)](https://travis-ci.org/jlobos/rut.js)
-[![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
-
 Sencilla y pequeña libreria para validar y dar formato al RUT. Funciona en Node.js y Navegadores (Webpack, Browserify)
 
 > Utilizada en producción para manejar mas de 13 millones de chilenos en [Rutify – Rutificador](https://rutify.cl/) 
