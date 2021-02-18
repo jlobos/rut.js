@@ -50,7 +50,7 @@ format('9068826-k')     // '9.068.826-K'
  * Obtener el dígito verificador
  */
 getCheckDigit('18.972.631')  // '7'
-getcheckDigit('9068826')     // 'K'
+getCheckDigit('9068826')     // 'K'
 ```
 
 ## Instalación
