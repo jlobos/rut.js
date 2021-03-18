@@ -5,7 +5,11 @@ Sencilla y pequeña libreria para validar y dar formato al RUT. Funciona en Node
 > Utilizada en producción para manejar mas de 13 millones de chilenos en [~Rutify – Rutificador~](https://rutify.cl/)
 
 ```js
+// AMD
 const { validate, clean, format, getCheckDigit } = require('rut.js')
+
+// ES2015 Modules
+import {  validate, clean, format, getCheckDigit } from 'rut.js'
 
 // true
 validate('18.972.631-7')
@@ -57,6 +61,7 @@ getCheckDigit('9068826')     // 'K'
 
 ```bash
 npm install --save rut.js
+yarn add rut.js
 ```
 
 ## Testing
