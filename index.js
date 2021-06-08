@@ -34,12 +34,19 @@ function validate (rut) {
   return v === rut.slice(-1)
 }
 
-function format (rut) {
+function format (rut, options = {
+  dots: true
+}) {
   rut = clean(rut)
 
-  let result = rut.slice(-4, -1) + '-' + rut.substr(rut.length - 1)
-  for (let i = 4; i < rut.length; i += 3) {
-    result = rut.slice(-3 - i, -i) + '.' + result
+  let result
+  if (options.dots) {
+    result = rut.slice(-4, -1) + '-' + rut.substr(rut.length - 1)
+    for (let i = 4; i < rut.length; i += 3) {
+      result = rut.slice(-3 - i, -i) + '.' + result
+    }
+  } else {
+    result = rut.slice(0, -1) + '-' + rut.substr(rut.length - 1)
   }
 
   return result

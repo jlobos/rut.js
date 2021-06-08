@@ -50,6 +50,12 @@ format('189726317')     // '18.972.631-7'
 format('18*972*631*7')  // '18.972.631-7'
 format('9068826-k')     // '9.068.826-K'
 
+// Dots es true por default
+format('18.972.631-7', { dots: false })  // '18972631-7'
+format('189726317', { dots: false })     // '18972631-7'
+format('18*972*631*7', { dots: false })  // '18972631-7'
+format('9068826-k', { dots: false })     // '9068826-K'
+
 /**
  * Obtener el dígito verificador
  */
