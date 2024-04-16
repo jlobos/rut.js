@@ -31,6 +31,9 @@ function validate (rut) {
 function format (rut, options = {
   dots: true
 }) {
+  // If the input is not a string, return an empty string
+  if (!rut) { return '' }
+
   rut = clean(rut)
 
   let result
