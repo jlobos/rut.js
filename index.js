@@ -9,13 +9,7 @@ function validate (rut) {
     return false
   }
 
-  // if it starts with 0 we return false
-  // so a rut like 00000000-0 will not pass
-  if (/^0+/.test(rut)) {
-    return false
-  }
-
-  if (!/^0*(\d{1,3}(\.?\d{3})*)-?([\dkK])$/.test(rut)) {
+  if (!/^([1-9]\d{0,2}(\.?\d{3})*)-?[\dkK]$/.test(rut)) {
     return false
   }
 
@@ -37,6 +31,9 @@ function validate (rut) {
 function format (rut, options = {
   dots: true
 }) {
+  // If the input is not a string, return an empty string
+  if (!rut) { return '' }
+
   rut = clean(rut)
 
   let result

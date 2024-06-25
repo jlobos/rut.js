@@ -39,6 +39,7 @@ test('format', (t) => {
   t.is(format('189726317', { dots: false }), '18972631-7')
   t.is(format('18*972*631*7', { dots: false }), '18972631-7')
   t.is(format('9068826-k', { dots: false }), '9068826-K')
+  t.is(format(''), '')
 })
 
 test('does not validate rut with 0 on most right digit', t => {
