@@ -27,7 +27,7 @@
     "browser"
   ],
   "devDependencies": {
-    "ava": "^3.15.0",
-    "standard": "^16.0.3"
+    "ava": "^6.2.0",
+    "standard": "^17.1.2"
   }
 }
